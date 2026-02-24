@@ -14,11 +14,17 @@ draw = function(){
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
-
+drawFish(mouseX,mouseY)
 }
 
 //🟡drawFish Function - will run when called
 var drawFish = function(fishX, fishY, fishColor){
+  textSize(80);
+  fill(fishColor);
+  text("𓆝", fishX, fishY);
+};
+//🟡drawFish Function - will run when called
+var drawShark = function(fishX, fishY, fishColor){
   textSize(80);
   fill(fishColor);
   text("𓆝", fishX, fishY);
